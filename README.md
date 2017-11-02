@@ -32,25 +32,32 @@ Great for displaying machine id's right on the desktop. By default the machines 
 
 ## Installation
 1. Copy the compiled `labelnotch` application to `/usr/local/bin`
-  ```Bash
-  sudo cp {the/build/path}/labelnotch /usr/local/bin/labelnotch
-  ```
-1. Create a *Launch Agent* for the user. This will start the application upon login.
-  ```Bash
-  mkdir -p ~/Library/LaunchAgents
-  cp com.darwinist.labelnotch.plist ~/Library/LaunchAgents/com.darwinist.labelnotch.plist # Copy plist to user's Launch Agents
-  ```
-1. Launch for the first time
-  ```Bash
-  launchctl load -w ~/Library/LaunchAgents/com.darwinist.labelnotch.plist
-  ```
-1. Update the text:
-  ```Bash
-  defaults write com.darwinist.labelnotch title "MC00010349"
 
-  launchctl unload ~/Library/LaunchAgents/com.darwinist.labelnotch.plist
-  launchctl load -w ~/Library/LaunchAgents/com.darwinist.labelnotch.plist
-  ```
+      ```Bash
+      sudo cp {the/build/path}/labelnotch /usr/local/bin/labelnotch
+      ```
+  
+1. Create a *Launch Agent* for the user. This will start the application upon login.
+  
+      ```Bash
+      mkdir -p ~/Library/LaunchAgents
+      cp com.darwinist.labelnotch.plist ~/Library/LaunchAgents/com.darwinist.labelnotch.plist # Copy plist to user's Launch Agents
+      ```
+  
+1. Launch for the first time
+
+      ```Bash
+      launchctl load -w ~/Library/LaunchAgents/com.darwinist.labelnotch.plist
+      ```
+
+1. Update the text:
+
+      ```Bash
+      defaults write com.darwinist.labelnotch title "MC00010349"
+
+      launchctl unload ~/Library/LaunchAgents/com.darwinist.labelnotch.plist
+      launchctl load -w ~/Library/LaunchAgents/com.darwinist.labelnotch.plist
+      ```
 
 
 ## Changing the Label Text
