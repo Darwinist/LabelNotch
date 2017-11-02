@@ -16,7 +16,7 @@ Great for displaying machine id's right on the desktop. By default the machines 
   - The content is centered and can be changed based on editable plist values.
 
 <p align="center">
-  <img src="/Assets/nightswitch.gif" alt="" width=600>
+  <img src="/Assets/nightswitch.gif" alt="" width=600><br>
   <em>Switching to dark mode.</em>
   <br>
   <br>
